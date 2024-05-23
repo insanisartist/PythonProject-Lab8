@@ -6,7 +6,7 @@ class MyMainWindow(QMainWindow):
     def __init__(self):
         super(MyMainWindow, self).__init__()
         loadUi('example.ui', self)
-
+        self.setStyleSheet("background-color: #dcf9ff;")
         self.addButton.clicked.connect(self.add_document)
         self.deleteButton.clicked.connect(self.delete_document)
         self.confirmButton.clicked.connect(self.confirm_document)
