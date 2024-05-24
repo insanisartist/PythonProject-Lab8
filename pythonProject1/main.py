@@ -31,7 +31,7 @@ class MyMainWindow(QMainWindow):
             self.tableWidget.setItem(rowPosition, 3, QTableWidgetItem(status))
 
     def delete_document(self):
-        selected_row = self.tableWidget.currentRow()
+
         if selected_row >= 0:
             self.tableWidget.removeRow(selected_row)
 
